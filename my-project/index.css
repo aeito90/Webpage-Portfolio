@@ -19,24 +19,20 @@ body {
 }
 
 .navbar {
-   display: flex;
-    position: fixed; /* dock at top, now floating */
-    top: 1rem; /* offset from top to appear 'floating' */
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(320px, 90vw, 700px);
-    max-width: 700px;
-    padding: .5rem 1rem;
+    display: flex;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0.75rem 1rem;
     z-index: 1000;
-    justify-content: center; /* center navbar content horizontally */
+    justify-content: center;
     align-items: center;
-    background-color: rgba(241, 241, 241, 0.685);
+    background-color: #fafdfead; 
     color: rgb(0, 0, 0);
-    padding: .5rem 1rem;
-    border-radius: 24px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    backdrop-filter: blur(64px);
-    border: 1px solid rgba(78, 72, 72, 0.281);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    backdrop-filter: blur(32px); 
 }
 
 
@@ -55,19 +51,24 @@ body {
 
 .navbar-links li {
     list-style: none;
+         transition:  0.2s linear
 }
 
 .navbar-links li a {
     display: block;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 0.35rem;
+    padding: 0.5rem;
     
 }
 
 .navbar-links li:hover {
-    background-color: #d6dee2cd;
+    background-color: #ececece5;
     border-radius: 8px;
+}
+
+.navbar-links li a:hover {
+    color: #24d600;
 }
 
 .toggle-button {
@@ -130,8 +131,8 @@ body {
 }
 .section_1 {
     background-image:
-      linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.35) 30%, rgba(255, 255, 255, 0.68) 70%, rgb(255, 255, 255) 100%),
-      url('/my-project/media/IMG_8684.jpg');
+      linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(214, 249, 255, 0.178) 30%, #f5f7fd7e 70%, #f5f7fd 100%),
+      url('/my-project/media/FB_IMG_1757297413793.jpg');
 background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -144,7 +145,7 @@ background-position: center;
 }
 
 .section_2 {
-    background-color: rgb(255, 255, 255);
+    background-color: #5eb7ff;
     height: 100vh;
     width: 100%;
     display: flex;
