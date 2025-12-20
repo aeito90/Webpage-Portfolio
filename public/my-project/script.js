@@ -7,7 +7,7 @@ toggleButton.addEventListener('click', () => {
 
 function closeMenuIfClickedOutside(e) {
   // Only active on small screens (matches your CSS breakpoint)
-  if (!window.matchMedia('(max-width: 500px)').matches) return
+  if (!window.matchMedia('(max-width: 768px)').matches) return
 
   if (navbarLinks.classList.contains('active')) {
     const target = e.target
