@@ -69,7 +69,7 @@ margin-right: clamp(1rem, 5vw + 2vh, 6rem);
 
 .toggle-button {
     position: absolute;
-    top: .5rem;
+    top: .7rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -93,7 +93,7 @@ margin-right: clamp(1rem, 5vw + 2vh, 6rem);
 
     .nav-col-box {
         margin-top: 8px;
-        margin-left: 0.1rem;
+        margin-left: 0.5rem;
     }
 
     .toggle-button {
