@@ -161,7 +161,7 @@ background-position: center;
     color: white;
     font-size: clamp(2rem, 3rem + 1vw, 4rem);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    margin-top: 35rem;
+    margin-top: clamp(8rem, 12rem + 1vw, 24rem);
     text-align: center;
 }
 
@@ -171,7 +171,7 @@ background-position: center;
     background-clip: text;
     font-weight: normal;
     text-align: center;
-    margin-top: -2rem;
+    margin-top: clamp(-4rem, -3rem + 1vw, -2rem);
     text-shadow: 1px 1px 4px #F78104b3;
        font-size: clamp(1rem, 1.5rem + 0.5vw, 2rem);
 }
@@ -197,8 +197,8 @@ background-position: center;
 }
 
 .pro-con {
-      height: clamp(60vh, 75vh + 6vw, 75vh);
-    width: clamp(60vw, 80vw + 2vw, 75vw);
+      max-height: clamp(20rem, 60vh, 40rem);
+    max-width: clamp(20rem, 80vw, 90rem);
     margin: 0 auto;
 }
 .container {
@@ -209,34 +209,37 @@ background-position: center;
 }
 
 .container img {
-      aspect-ratio: 3 / 4;
-    width: clamp(8rem, 14rem + 1vw, 20rem);
+
+    width: clamp(4rem, 8rem + 5vw, 20rem);
     border-radius: 16px;
      box-shadow: 1px 1px 12px #00000044;
-     margin: 4rem 4rem 0 2rem;
      border: 1px solid #ffffff;
+     margin: 3rem;
+     margin-top: -2rem;
+     margin-right: clamp(1rem, 2rem + 1vw, 3rem);
 }
 
 .container p {
     text-indent: calc(2rem + 1vw);
     color: white;
-    font-size: clamp(0.2rem, 0.4rem + 1vw, 1.5rem);
+    font-size: clamp(0.5rem, 0.65rem + 0.5vw, 1.5rem);
     font-weight: 350;
     line-height: clamp(1, 1.2);
-    margin-left: clamp(2rem, 4rem + 1vw, 6rem);
-    margin-top: clamp(1rem, 2rem, 3rem);
+    margin-left: clamp(1rem, 2rem + 1vw, 6rem);
+    margin-top: clamp(1rem, 2rem, 2.5rem);
     text-align: left;
+    margin-top: -1rem;
 
 }
 
-@media (max-width: 990px) {
+@media (max-width: 700px) {
     .container {
         flex-direction: column;
         align-items: center;
     }
 
     .container img, .container p {
-        margin: 1rem 0;
+        margin: 1rem;
     }
 
     .container p {
@@ -248,9 +251,9 @@ background-position: center;
 
 .pro-con h5 {
     color: white;
-    font-size: clamp(0.5rem, 1rem + 0.5vw, 1.5rem);
+    font-size: clamp(0.5rem, 0.5rem + 0.5vw, 1.5rem);
     text-align: center;
-    margin-top: 2rem;
+    margin-top: clamp(.2rem, .5rem, 1rem);
     font-weight: 600;
 }
 
