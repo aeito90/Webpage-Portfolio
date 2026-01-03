@@ -8,7 +8,7 @@ toggleButton.addEventListener('click', () => {
 // Close menu when clicking/tapping outside it on narrow displays
 function closeMenuIfClickedOutside(e) {
   // Only active on small screens
-  if (!window.matchMedia('(max-width: 768px)').matches) return
+  if (!window.matchMedia('(max-width: 750px)').matches) return
 
   if (navbarLinks.classList.contains('active')) {
     const target = e.target
