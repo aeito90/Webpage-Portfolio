@@ -16,6 +16,7 @@ body {
     color: #555;
 }
 
+
 /*navbar*/
 .navbar {
     display: flex;
@@ -54,17 +55,20 @@ color: #282828;
 
 .navbar-links li {
     list-style: none;
+    transition: linear 0.15s;
+    margin: 0 0.3rem;
 }
 
 .navbar-links li a {
     display: block;
     text-decoration: none;
     color: #282828;
-    padding: 0.6rem;
+    padding: 0.6rem 0.3rem 0.6rem 0.3rem;
 }
 
+
 .navbar-links li:hover {
-    background-color: #ececec76;
+    background-color: #7e9eb22a;
     border-radius: 8px;
 }
 
