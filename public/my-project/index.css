@@ -172,7 +172,7 @@ color: #282828;
 }
 
 .page-2 {
-    height: clamp(40rem, 40rem, 60vh);
+    height: clamp(35rem, 30rem, 40vh);
     width: 100%;
     background-color: #7E9EB2;
     position: relative;
@@ -187,7 +187,7 @@ color: #282828;
 }
 
 .page-2 p {
-    max-width: 650px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: left;
     text-indent: 2em;
