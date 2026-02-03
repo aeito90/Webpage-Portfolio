@@ -14,6 +14,7 @@ body {
     padding: 0;
     font-family: 'IBM Plex Mono', monospace;
     color: #555;
+    background-color: #272727;
 }
 
 
@@ -24,7 +25,7 @@ body {
     top: 0;
     justify-content: center; 
     align-items: center;
-    background-color: #f9f9f9c7;
+    background-color: #191919;
     backdrop-filter: blur(32px);
     padding: 0.1rem 0; 
       width: 100%;
@@ -34,7 +35,7 @@ body {
 .navbar-name {
 font-size: 1.1rem;
 margin-right: clamp(1rem, 5vw + 1vh, 6rem);
-color: #282828;
+color: #f9f9f9;
 }
 
 .nav-col-box {
@@ -62,7 +63,7 @@ color: #282828;
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    color: #282828;
+    color: #f9f9f9;
     padding: 0.6rem 0.3rem 0.6rem 0.3rem;
 }
 
@@ -87,7 +88,7 @@ color: #282828;
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: #0b0b0b;
+    background-color: #fdfdfd;
     border-radius: 16px;
 }
 
@@ -140,13 +141,13 @@ color: #282828;
 
 /*content*/
 .page-1 {
-    height: 100dvh;
+    height: 85dvh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.5)), url('media/bg.webp');
+    background: linear-gradient(to bottom, #0000009d, #0000009d), url('media/cd.webp');
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -155,7 +156,7 @@ color: #282828;
 
 .page-1 p {
     font-size: clamp(1.5rem, 1vw, 2rem);
-        font-weight:600;
+        font-weight:300;
 }
 
 #name-head {
@@ -168,37 +169,33 @@ color: #282828;
 #mip {
 
     text-align: center;
-    color:#282828 ;
+    color: #f5f5f5; ;
 }
 #pkw {
     text-align: center;
-    color: #282828 ;
+    color: #f5f5f5 ;
 }
 
 #mip-highlight {
-    color: #2564eb ; 
+    color: #07d100 ; 
 }
 
 #pkw-highlight {
-    color: #ffffff ;
-    background-color: #6b9aff;
-    padding: 0.025rem 0.4rem 0.025rem 0.4rem;
-    border-radius: 4px;
-    backdrop-filter: blur(8px);
+    color: #6b9aff ;
 }
 
 .page-2 {
     height: clamp(35rem, 25rem, 40vh);
     width: 100%;
-    background-color: #d6dfff;
+    background:linear-gradient(to bottom, #070707, #191919);
     position: relative;
-    top: .2rem;
+    top: .3rem;
 }
 
 .page-2 h2 {
     text-align: center;
     padding-top: 4rem;
-    color: #3F5F76;
+    color: #fdfdfd;
     padding-bottom: 1rem;
     font-size: 2em;
 }
@@ -208,7 +205,7 @@ color: #282828;
     margin: 0 auto;
     text-align: left;
     text-indent: 2em;
-    color: #282828;
+    color: #ffffff;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -238,7 +235,7 @@ max-width: 25%;
 .page-3 {
     height: clamp(25rem, 15dvh, 25rem );
     width: 100%;
-    background-color: #eaefff;
+    background: linear-gradient(to bottom, #191919, #222222);
     text-align: center;
 }
 
@@ -271,20 +268,21 @@ max-width: 25%;
 
 #ccskills p {
     padding: .5em;
-    background-color: #008083;
-    border: 2px solid #006b6d;
+    background-color: #B4E5FF;
+    border: 2px solid #00D0FF;
     border-radius: 8px;
-    color: #fff ;
-    max-width: 1000px;
+    color: #1352ff ;
+    max-width: 900px;
+    
 }
 
 #ccinterests p {
     padding: .5em;
-    background-color: #FC9A32;
-    border: 2px solid #F78104;
+    background-color: #95ff87;
+    border: 2px solid #33ca00;
     border-radius: 8px;
-    color: #fff ;
-    max-width: 1000px;
+    color: #23a502 ;
+    max-width: 900px;
 }
 
 .page-4 {
@@ -303,4 +301,10 @@ max-width: 25%;
     justify-content: center; 
     align-items: center;
     color: white;
+}
+
+.footer span {
+    color: #8587ff;
+    margin-left: .7em;
+    
 }
