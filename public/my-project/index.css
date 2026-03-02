@@ -141,7 +141,7 @@ color: #f9f9f9;
 
 /*content*/
 .page-1 {
-    height: 85dvh;
+    height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
