@@ -30,6 +30,7 @@ body {
     padding: 0.1rem 0; 
       width: 100%;
     margin: 0 ;
+    z-index: 10;
 }
 
 .navbar-name {
@@ -69,9 +70,8 @@ color: #f9f9f9;
 
 
 .navbar-links li:hover {
-    background-color: #4fbcff96;
+    background-color: #ffc8007d;
     border-radius: 6px;
-    border-color: #2564eb;
 }
 
 .toggle-button {
@@ -92,7 +92,7 @@ color: #f9f9f9;
     border-radius: 16px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 740px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -259,16 +259,16 @@ max-width: 25%;
 }
 
 #skills {
-    color: #008083;
+    color: #136dff;
 }
 
 #interests {
-    color: #F78104;
+    color: #4cff42;
 }
 
 #ccskills p {
     padding: .5em;
-    background-color: #B4E5FF;
+    background-color: rgb(180, 229, 255, 0.8);
     border: 2px solid #00D0FF;
     border-radius: 8px;
     color: #1352ff ;
@@ -278,7 +278,7 @@ max-width: 25%;
 
 #ccinterests p {
     padding: .5em;
-    background-color: #95ff87;
+    background-color: rgba(149, 255, 135, 0.8);
     border: 2px solid #33ca00;
     border-radius: 8px;
     color: #23a502 ;
@@ -286,8 +286,37 @@ max-width: 25%;
 }
 
 .page-4 {
-    height: 10rem;
+    height: 100dvh;
     width: 100%;
+    background: linear-gradient(to bottom, #222222, #414141);
+}
+
+.page-4 h1 {
+    text-align:center;
+    padding-top: 2rem;
+    color: #fff ;
+}
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    border-radius: 16px;
+    height: 75%;
+    width: 8px;
+    background: linear-gradient(to bottom, #8587ff, #fff);
+    z-index: 1;
+}
+
+.rec-container {
+    width: 100px;
+    height: 200px;
+    background-color: #07d100;
+    flex-direction: column;
+    z-index: 2;
 }
 
 /*footer*/  
@@ -301,6 +330,7 @@ max-width: 25%;
     justify-content: center; 
     align-items: center;
     color: white;
+    z-index: 10;
 }
 
 .footer span {
