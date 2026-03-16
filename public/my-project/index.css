@@ -12,14 +12,21 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'IBM Plex Mono', monospace;
-    color: #555;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #f7f7f7;
+    background-color: #ffffff;
 }
  
 .auto_cvis {
     content-visibility: auto;
 }
 
+.pf {
+    font-family: "prompt", sans-serif;
+}
+.ibmmono {
+    font-family: 'IBM Plex Mono', monospace;
+}
 
 /*navbar*/
 .navbar {
@@ -28,24 +35,26 @@ body {
     top: 0;
     justify-content: center; 
     align-items: center;
-    background-color: #4b4b4b;
-    backdrop-filter: blur(48px);
-    padding: 0.1rem 0; 
+    background-color: #181818;
+    padding: .1rem 0; 
       width: 100%;
     z-index: 10;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
 }
-
 .navbar-name {
 font-size: 1.1rem;
-margin-right: clamp(2rem, 5vw + 1vh, 8rem);
 color: #f9f9f9;
+margin-right: clamp(1rem, 3vw, 6rem);
 }
 
 .nav-img {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .navbar-links {
@@ -61,7 +70,7 @@ color: #f9f9f9;
 .navbar-links li {
     list-style: none;
     transition: linear 0.15s;
-    margin: 0.2rem 0.3rem;
+    margin: 0.2rem 0.2rem;
 }
 
 .navbar-links li a {
@@ -76,13 +85,13 @@ color: #f9f9f9;
 
 
 .navbar-links li:hover {
-    background-color: #7ec5ff93;
-    border-radius: 32px;
+    border-radius: 12px;
+    outline: 2px solid #33FF33;
 }
 
 .toggle-button {
     position: absolute;
-    top: .7rem;
+    top: 1rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -98,7 +107,7 @@ color: #f9f9f9;
     border-radius: 16px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 750px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -110,7 +119,7 @@ color: #f9f9f9;
     }
 
     .navbar-name {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.7rem;
     }
 
     .toggle-button {
@@ -133,7 +142,7 @@ color: #f9f9f9;
 
     .navbar-links ul li a {
         padding: .5rem 1rem;
-        top: 16px;
+        top: 1rem;
     }
 
     .navbar-links.active {
@@ -146,44 +155,42 @@ color: #f9f9f9;
 }
 
 /*content*/
-.page-1, .page-2 {
-    flex-shrink: 0;
-}
 .page-1 {
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
     align-items: center;
-    background: linear-gradient(to bottom, #ffffff00, #f2f2f2), url('media/bg.webp');
-    background-position: center;
+    background: linear-gradient(to bottom, #ffffff00, #00000000), url('media/bbg.webp');
+    background-position: bottom;
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    margin-bottom: 4px;
+    margin-bottom: 1px;
 }
 
 .page-1 p {
-    font-size: clamp(1.5rem, 2vw, 2.2rem);
-        font-weight:400;
+    font-size: clamp(3rem, 5vw, 5rem);
+        font-weight:750;
 }
 
 #name-head {
-    font-size: clamp(3rem, 4vw, 4rem);
-    font-weight: 500;
+    font-size: clamp(4rem, 6vw, 6rem);
+    font-weight: 400;
     text-align: center;
-    /*margin-bottom: -0.5vh;*/
     color: #ffffff ;
+    margin-top: 8rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 #mip {
 
     text-align: center;
     color: #282828 ;
 }
-#pkw {
+#port-txt {
     text-align: center;
-    color: #3F5F76 ;
+    color: #31F131 ;
 }
 /*
 #mip-highlight {
@@ -200,13 +207,13 @@ color: #f9f9f9;
     min-height: 40vh;
     height: auto;
     width: 100%;
-    background-color: #EAF7FF ;
+    background-color: #181818;
 }
 
 .page-2 h2 {
     text-align: center;
     padding-top: 4rem;
-    color: #282828;
+    color: #f2f2f2;
     padding-bottom: 1rem;
     font-size: 2em;
 }
@@ -216,7 +223,7 @@ color: #f9f9f9;
     margin: 0 auto;
     text-align: left;
     text-indent: 2em;
-    color: #282828;
+    color: #f2f2f2;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -245,12 +252,11 @@ max-width: 25%;
 }
 
 .page-3 {
-    min-height: 40vh;
+    min-height: 25vh;
     height: auto;
     width: 100%;
-    background-color: #EAF7FF;
+    background-color: #181818;
     text-align: center;
-    margin-bottom: 4px;
 }
 
 .page-3 ul {
@@ -269,21 +275,21 @@ max-width: 25%;
 .page-3 h2 {
     font-size: 2em;
     padding-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 #skills {
-    color: #136dff;
+    color: #1352ff;
 }
 
 #interests {
-    color: #7dfc76;
+    color: #2ad100;
 }
 
 #ccskills p {
     padding: .5em;
-    background-color: rgb(180, 229, 255, 0.8);
-    border: 2px solid #00D0FF;
+    background-color: rgba(19, 82, 255, 0.1);
+    border: 2px solid #006eff;
     border-radius: 8px;
     color: #1352ff ;
     max-width: 900px;
@@ -292,17 +298,17 @@ max-width: 25%;
 
 #ccinterests p {
     padding: .5em;
-    background-color: rgba(149, 255, 135, 0.8);
+    background-color: rgba(42, 209, 0, 0.1);
     border: 2px solid #33ca00;
     border-radius: 8px;
-    color: #23a502 ;
+    color: #2ad100 ;
     max-width: 900px;
 }
 
 .page-4 {
    height: 150vh;
     width: 100%;
-    background: linear-gradient(to bottom, #EAF7FF, #439be9);
+    background-color: #181818;
     margin-top: -1px;
 }
 
@@ -361,7 +367,7 @@ max-width: 25%;
 .footer {
     height: 3rem;
     width: 100%;
-    background-color: #282828da;
+    background-color: #000000da;
     backdrop-filter: blur(64px);
     display: flex;
     position: fixed;
