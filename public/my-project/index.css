@@ -352,8 +352,8 @@ max-width: 25%;
   object-fit: cover;   
   border: 4px solid #fff;
   border-radius: 16px;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 .block1 {
     min-height: 25vh;
