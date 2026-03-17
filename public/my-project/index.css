@@ -341,7 +341,7 @@ max-width: 25%;
     font-weight: bold;
     font-size: 4em;
     color: #31F131;
-    filter: drop-shadow(0 0 8px #31F131);
+    filter: drop-shadow(0 0 4px #31F131);
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
