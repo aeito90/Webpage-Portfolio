@@ -352,6 +352,8 @@ max-width: 25%;
   object-fit: cover;   
   border: 4px solid #fff;
   border-radius: 16px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 .block1 {
     min-height: 25vh;
@@ -373,9 +375,6 @@ max-width: 25%;
     background: linear-gradient(to left, #2F2F2F, #2D2D2D);
 }
 
-.block1 .block3 img {
-    margin-left: 2em;
-}
 
 /*footer*/  
 .footer {
