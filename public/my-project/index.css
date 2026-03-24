@@ -183,7 +183,7 @@ body {
 
 /*content*/
 .page-1 {
-    min-height: 90vh ;
+    height: fit-content ;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -192,7 +192,6 @@ body {
     background-size: 100%;
     background-attachment: scroll;
     background-repeat: no-repeat;
-
 }
 
 
@@ -218,7 +217,8 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-
+    z-index: 10;
+    position: relative;
 }
 .container1 a {
     text-decoration: none;
@@ -238,7 +238,7 @@ body {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     transition: linear;
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
     transition-duration: 0.5s;
@@ -260,9 +260,6 @@ body {
 .act {
     background-image: url('media/act.svg');
 }
-.pg {
-    background-image: url('media/pg.svg');
-}
 .blog {
     background-image: url('media/blog.svg');
 }
@@ -272,7 +269,6 @@ body {
     height: auto;
     width: 100%;
     background-color: rgb(255, 250, 245, 0.7);
-
 }
 
 .page-2 h2 {
@@ -436,13 +432,13 @@ max-width: 25%;
     justify-content: center; 
     align-items: center;
     color: #282828;
-    z-index: 10;
+    z-index: 999;
     border-radius: 32px;
 }
 
 .footer a {
     color: #8587ff;
-    margin-left: .7em;
+    margin-left: .5em;
     
 }
 
