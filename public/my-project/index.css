@@ -345,6 +345,7 @@ max-width: 25%;
     width: 100%;
     background-color:rgba(255, 242, 229, 1);
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .page-3 ul {
