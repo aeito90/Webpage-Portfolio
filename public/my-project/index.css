@@ -470,8 +470,14 @@ max-width: 25%;
 
 .page-5 ul a {
     margin-top: 2rem;
-    padding: 1rem;
+    padding: .5rem;
+    margin-left: 1em;
     color: #f1f1f1;
+}
+
+.form {
+    background-color: #707070;
+    border-radius: 12px;
 }
 /*footer*/  
 .footer {
