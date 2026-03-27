@@ -406,7 +406,7 @@ max-width: 25%;
     text-align: center;
     padding-top: 4rem;
     font-weight: 500;
-    font-size: clamp(1.5rem, 2em, 3em);
+    font-size: clamp(1.2rem, 1.4em, 2em);
 }
 .page-4 section mark {
     color: #f1f1f1;
