@@ -14,7 +14,6 @@ body {
     padding: 0;
     font-family: "prompt", sans-serif;
     color: #191919;
-    background-image: url("media/bg.svg");
 }
 
 .pridi {
@@ -68,10 +67,9 @@ body {
     padding: 0.6rem 1rem;
     justify-content: center; 
     align-items: center;
-    /*background-color: rgba(255, 255, 255, 0.001);*/
-    background-color: rgb(253, 253, 253,0.8);
+    background: linear-gradient(to bottom,rgb(253, 253, 253,1),rgb(253, 253, 253,0.85));
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.15);
     backdrop-filter: blur(8px);
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.25);
     z-index: 10;
     
 }
@@ -193,10 +191,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(224, 94, 0),rgba(240, 137, 54, 0.8), rgb(255, 180, 107, 0.95));
-    background-size: 100%;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgb(224, 94, 0),rgba(240, 137, 54, 0.8), rgb(255, 180, 107, 0.95)), url(media/bg.svg);
+
 }
 
 
@@ -236,14 +232,14 @@ body {
     margin: 1.4rem;
     
     background-position: center;
-    background-size: contain;
+    background-size: fill;
 
     animation-duration: 0.5s;
     animation-name: animate-pop;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: linear;
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
     transition-duration: 0.5s;
@@ -251,7 +247,7 @@ body {
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.25);;
 }
 .card h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 200;
 }
 .card section {
@@ -293,12 +289,12 @@ body {
 }
 
 .page-2 p {
-    max-width: 600px;
+    max-width: 700px;
     text-align: left;
     text-indent: 2em;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 .page-2 img {
     min-width: 140px;
@@ -387,15 +383,16 @@ max-width: 25%;
 }
 
 .page-4 {
-    height: 150vh;
+    height: fit-content;
     width: 100%;
-        background: linear-gradient(to bottom, #FFFAF5,rgb(255, 250, 245, 0.8)),url("media/bg2.svg");
+    background: linear-gradient(to bottom, #FFFAF5,rgb(255, 250, 245, 0.9)),url("media/bg2.svg");
+    padding-bottom: 2rem;
 
 }
 .page-4 p {
     padding-left: 1em;
     padding-right: 1em;
-    max-width: 600px;
+    max-width: 700px;
     text-indent: 2em;
 }
 .page-4 section {
@@ -411,6 +408,15 @@ max-width: 25%;
     font-weight: 500;
     font-size: 3em;
 }
+.page-4 section mark {
+    color: #f1f1f1;
+}
+#bronze {
+    background-color: #7E4115;
+}
+#silver {
+    background-color: #9a9a9a;
+}
 
 .page-4 h2 {
     text-align: center;
@@ -424,7 +430,7 @@ max-width: 25%;
 .page-4 img {
     min-width: 120px;
     width: 15vw;
-    max-width: 150px;  
+    max-width: 170px;  
   height: auto;
   object-fit: cover;   
   border: 2px solid #fff;
@@ -446,7 +452,11 @@ max-width: 25%;
 .bg-grad-lv3 {
     background: linear-gradient(to right, #FFFAF500 0%, #FFFAF500 10%, #FF942D 25%, #FFFAF500 75%, #FFFAF500  100%);
 }*/
-
+.page-5 {
+    height: 30vh;
+    width: 100%;
+    background-color: #282828;
+}
 /*footer*/  
 .footer {
     height: 2.5rem;
