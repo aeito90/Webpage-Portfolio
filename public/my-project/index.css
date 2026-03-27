@@ -453,9 +453,25 @@ max-width: 25%;
     background: linear-gradient(to right, #FFFAF500 0%, #FFFAF500 10%, #FF942D 25%, #FFFAF500 75%, #FFFAF500  100%);
 }*/
 .page-5 {
-    height: 30vh;
+    height: fit-content;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #282828;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+.page-5 h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #909090;
+    font-weight: 500;
+}
+
+.page-5 ul a {
+    margin-top: 2rem;
+    padding: 1rem;
+    color: #f1f1f1;
 }
 /*footer*/  
 .footer {
